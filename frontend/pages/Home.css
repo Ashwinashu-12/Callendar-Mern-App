@@ -1,0 +1,80 @@
+/* Background */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f2ff, #f0eaff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.home-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Title */
+.home-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.home-title span {
+  color: #4f46e5;
+}
+
+/* Subtitle */
+.home-subtitle {
+  margin: 15px 0 30px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Buttons Container */
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* General Button Style */
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Specific Buttons */
+.calendar-btn {
+  background: #4f46e5;
+}
+.calendar-btn:hover {
+  background: #4338ca;
+}
+
+.profile-btn {
+  background: #2563eb;
+}
+.profile-btn:hover {
+  background: #1e40af;
+}
+
+.logout-btn {
+  background: #dc2626;
+}
+.logout-btn:hover {
+  background: #b91c1c;
+}

@@ -1,0 +1,184 @@
+/* 🌟 Modern UI with Glassmorphism */
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.2);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.day-name {
+  text-align: center;
+  font-weight: bold;
+  color: #ddd;
+  padding: 8px 0;
+}
+
+.day-cell {
+  height: 90px;
+  padding: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.day-cell:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.faded {
+  opacity: 0.4;
+}
+
+.today {
+  border: 2px solid #4dafff;
+  background: rgba(77, 175, 255, 0.1);
+}
+
+.selected {
+  border: 2px solid #4dffb8;
+  background: rgba(77, 255, 184, 0.1);
+}
+
+.date-num {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ff6961;
+  border-radius: 50%;
+  margin-top: auto;
+}
+
+.festival-preview {
+  font-size: 10px;
+  color: #ffd369;
+  margin-top: 4px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  padding: 20px;
+  width: 350px;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff6b6b;
+}
+
+.task-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.task-input button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #4dafff;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-btn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  background: #ff4d6d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+}

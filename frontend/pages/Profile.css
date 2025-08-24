@@ -1,0 +1,362 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+.profile-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.2s;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Avatar Circle */
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  background: #4f46e5;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem auto;
+}
+
+/* Details in black */
+.profile-name,
+.profile-email,
+.profile-joined {
+  color: #000000;   /* ✅ text in black */
+  margin: 0.5rem 0;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #f1f5f9; /* light slate gray background */
+}
+
+.profile-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-avatar {
+  font-size: 60px;
+  color: #3b82f6; /* blue */
+  margin-bottom: 15px;
+}
+
+.profile-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b; /* dark slate */
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  font-size: 1rem;
+  color: #334155; /* slightly lighter text */
+  margin: 8px 0;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  background: linear-gradient(135deg, #e0f2fe, #f1f5f9);
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Cover banner */
+.profile-banner {
+  height: 100px;
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  border-radius: 12px 12px 0 0;
+  margin: -30px -30px 20px -30px;
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 4px solid #fff;
+  background: #e2e8f0;
+  object-fit: cover;
+}
+
+/* Name + email */
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-top: 10px;
+}
+
+.profile-email {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.profile-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.profile-btn.primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.profile-btn.primary:hover {
+  background: #1d4ed8;
+}
+
+.profile-btn.secondary {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.profile-btn.secondary:hover {
+  background: #cbd5e1;
+}
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f8fafc;
+  padding: 20px;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  width: 500px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Cover Header */
+.profile-cover {
+  height: 150px;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  position: relative;
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e2e8f0;
+  object-fit: cover;
+}
+
+/* Info section */
+.profile-info {
+  margin-top: 70px;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.profile-email {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.profile-bio {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Stats */
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Actions */
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.profile-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.profile-btn.primary {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.profile-btn.primary:hover {
+  background: #2563eb;
+}
+
+.profile-btn.secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.profile-btn.secondary:hover {
+  background: #d1d5db;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: linear-gradient(to bottom right, #e6f0ff, #f8fbff);
+}
+
+.profile-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1a237e;
+}
+
+.profile-email {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.profile-bio {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  background: #1a73e8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0c5bd6;
+}

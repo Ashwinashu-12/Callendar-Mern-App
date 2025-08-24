@@ -1,0 +1,100 @@
+.calendar-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.calendar-box {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.react-calendar {
+  border: none;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+
+.react-calendar__tile {
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.react-calendar__tile:hover {
+  background: #e0f7fa;
+  cursor: pointer;
+}
+
+.react-calendar__tile--active {
+  background: #1976d2 !important;
+  color: white !important;
+}
+
+.today {
+  background: #4caf50 !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.weekend {
+  color: #d32f2f !important;
+}
+
+.task-panel {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.task-panel h2 {
+  margin-bottom: 1rem;
+  color: #1976d2;
+}
+
+.task-panel ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.task-panel li {
+  background: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.task-input button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-input button:hover {
+  background: #125a9c;
+}
